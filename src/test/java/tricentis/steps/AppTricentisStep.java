@@ -108,6 +108,7 @@ public class AppTricentisStep {
 		sendQuotePage.input_cmp_user("qatester");
 		sendQuotePage.input_cmp_password("test@Test123");
 		sendQuotePage.input_cmp_confirmpassword("test@Test123");
+		Utils.takeScreenshot("");
 		
 		
 		
@@ -116,6 +117,7 @@ public class AppTricentisStep {
 	@When("clico no botão Send")
 	public void clico_no_botão_Send() {
 		sendQuotePage.clicar_btn_send();
+		Utils.takeScreenshot("");
 	}
 
 	@Then("valido a mensagem Send e-mail success!")

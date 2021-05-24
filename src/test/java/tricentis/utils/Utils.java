@@ -36,7 +36,7 @@ public class Utils {
 		File scrFile = ((TakesScreenshot) Hooks.getDriver()).getScreenshotAs(OutputType.FILE);
 		Date data = new Date();
 		try {
-			FileUtils.copyFile(scrFile, new File("\\src\\test\\resources\\evidências\\" + fileName + Utils.dataHoraParaArquivo() + ".jpeg"),
+			FileUtils.copyFile(scrFile, new File("./target/screenshots/" + fileName + Utils.dataHoraParaArquivo() + ".jpeg"),
 					true);
 		} catch (IOException e) {
 			e.printStackTrace();
